@@ -1,0 +1,121 @@
+/* Styling Dasar */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1e40af;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #bfdbfe;
+}
+
+/* Container untuk 4 Kotak (Menggunakan Grid) */
+.card-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    
+    display: grid;
+    /* Membuat 2 kolom di desktop */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    flex-grow: 1; /* Memastikan konten mengisi ruang */
+}
+
+/* Styling Kotak Navigasi (Nav Card) */
+.nav-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Grid/Flex item styling */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Efek Hover */
+.nav-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.nav-card i {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    color: #1e40af; /* Warna ikon default */
+}
+
+.nav-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #1e40af;
+}
+
+.nav-card p {
+    font-size: 1em;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.nav-card span {
+    display: inline-block;
+    background-color: #10b981;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.nav-card:hover span {
+    background-color: #059669;
+}
+
+/* Warna Khusus per Kotak */
+.card-aij i { color: #f97316; } /* Oranye */
+.card-asj i { color: #007bff; } /* Biru */
+.card-tlj i { color: #10b981; } /* Hijau */
+.card-main-port i { color: #6366f1; } /* Ungu */
+
+/* Responsivitas: Ubah menjadi 1 kolom di layar kecil */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #2d3748;
+    color: #a0aec0;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Memastikan footer selalu di bawah */
+}

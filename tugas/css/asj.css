@@ -1,0 +1,129 @@
+/* --- Reset Dasar --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* Warna background abu-abu lembut */
+    color: #333;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* --- Header --- */
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: #1a202c;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #718096;
+}
+
+/* --- Grid Layout (Agar kartu rapi bersebelahan) --- */
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* --- Styling Kartu --- */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden; /* Agar isi tidak keluar dari radius */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Agar footer selalu di bawah */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #cbd5e0;
+}
+
+/* Bagian Atas Kartu */
+.card-header {
+    padding: 25px 25px 10px 25px;
+}
+
+.badge {
+    background-color: #ebf8ff;
+    color: #3182ce; /* Warna biru teks badge */
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-header h2 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #2d3748;
+}
+
+/* Bagian Tengah Kartu */
+.card-body {
+    padding: 10px 25px 25px 25px;
+    flex-grow: 1; /* Mengisi ruang kosong */
+}
+
+.card-body p {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.task-details {
+    list-style: none;
+    border-top: 1px solid #edf2f7;
+    padding-top: 15px;
+}
+
+.task-details li {
+    font-size: 0.9rem;
+    color: #718096;
+    margin-bottom: 5px;
+}
+
+/* Bagian Bawah (Tombol) */
+.card-footer {
+    padding: 20px 25px;
+    background-color: #f7fafc;
+    border-top: 1px solid #edf2f7;
+    text-align: right;
+}
+
+.btn-view {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #3182ce; /* Warna Tombol Utama */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-view:hover {
+    background-color: #2b6cb0;
+}

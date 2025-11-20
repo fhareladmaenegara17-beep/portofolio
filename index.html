@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Profesional | Fharel Admaenegara AR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">FHAREL AR</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#portfolio">Portofolio</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content">
+            <img src="img/frll.JPG" alt="Foto Profil Fharel" class="profile-img">
+            <h1>Halo, Saya Fharel Admaenegara AR</h1>
+            <h2>Pelajar Teknik Komputer & Jaringan dari SMKN 12 Samarinda</h2>
+            <p>Bersemangat dalam Administrasi Sistem Jaringan (ASJ), Keamanan Jaringan, dan IoT.</p>
+            <a href="#portfolio" class="cta-button">Lihat Proyek Saya <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="about-content">
+            <p>Saya adalah pelajar SMK yang memiliki passion kuat di dunia jaringan komputer. Selama masa sekolah, saya aktif mengerjakan proyek-proyek riil, mulai dari konfigurasi router dan switch Cisco, Administrasi Server berbasis Linux (Debian/Ubuntu), hingga implementasi layanan jaringan seperti VoIP dan Web Server.</p>
+            <p>Tujuan saya adalah menjadi profesional di bidang keamanan jaringan atau network engineer.</p>
+        </div>
+    </section>
+    
+    <section id="skills" class="container dark-bg">
+        <h2 class="section-title white-text">Keahlian Teknis</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fas fa-server"></i>
+                <h3>Administrasi Server</h3>
+                <p>Debian, Ubuntu, CentOS (Web, DNS, DHCP, FTP, Samba).</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-network-wired"></i>
+                <h3>Routing & Switching</h3>
+                <p>Konfigurasi dasar perangkat Cisco (Static/Dynamic Routing, VLAN, Mikrotik).</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Keamanan Jaringan</h3>
+                <p>Firewall, NAT, VPN, dan dasar-dasar Keamanan Siber.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-phone-volume"></i>
+                <h3>Layanan Jaringan</h3>
+                <p>VoIP (Asterisk/FreePBX), Monitoring Jaringan (Nagios/Zabbix).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="container">
+        <h2 class="section-title">Portofolio & Navigasi Tugas</h2>
+        <p class="text-center">Klik pada kartu di bawah untuk melihat detail tugas setiap mata pelajaran.</p>
+        
+        <div class="card-container"> <a href="tugas/tugasaij.html" class="nav-card card-aij">
+                <i class="fas fa-brain"></i>
+                <h2>Tugas AIJ</h2>
+                <p>Administrasi Infrastruktur Jaringan</p>
+                <span>Buka Tugas</span>
+            </a>
+
+            <a href="tugas/tugasasj.html" class="nav-card card-asj">
+                <i class="fas fa-server"></i>
+                <h2>Tugas ASJ</h2>
+                <p>Administrasi Sistem Jaringan</p>
+                <span>Buka Tugas</span>
+            </a>
+
+            <a href="tugas/tugastlj.html" class="nav-card card-tlj">
+                <i class="fas fa-satellite-dish"></i>
+                <h2>Tugas TLJ</h2>
+                <p>Teknologi Layanan Jaringan</p>
+                <span>Buka Tugas</span>
+            </a>
+
+            <a href="tugas/tuga" class="nav-card card-main-port">
+                <i class="fas fa-clipboard-list"></i>
+                <h2>Ringkasan Proyek</h2>
+                <p>Dokumentasi Proyek Uji Kompetensi dan Praktik Industri</p>
+                <span>Buka Proyek</span>
+            </a>
+        </div>
+    </section>
+    
+    <section id="contact" class="container dark-bg">
+        <h2 class="section-title white-text">Kontak Saya</h2>
+        <p class="white-text">Tertarik bekerja sama atau ingin bertanya tentang proyek saya? Hubungi saya!</p>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> Email: admaefarel@gmail.com</p>
+            <p><i class="fas fa-phone"></i> Telepon: +62 822-5181-2900</p>
+            <p><i class="fab fa-github"></i> GitHub: <a href="[Link Github Anda]" target="_blank" class="contact-link">github.com/fharelar</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fharel Admaenegara AR | Dibuat dengan semangat TKJ.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
